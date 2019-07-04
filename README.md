@@ -41,3 +41,13 @@ dengy (master) ml_notes $ git push -u origin master
 # 从远程库克隆到本地
 `git clone 仓库的地址`  
 Git支持多种协议，包括https，但通过ssh支持的原生git协议速度最快。
+
+# 从远程库同步到本地
+```bash
+dengy (master) ml_notes $ git remote -v
+origin  git@github.com:eyedeng/ml_notes.git (fetch)
+origin  git@github.com:eyedeng/ml_notes.git (push)
+dengy (master) ml_notes $ git fetch origin master
+dengy (master) ml_notes $ git merge origin/master
+```
+
