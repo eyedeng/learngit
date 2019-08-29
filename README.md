@@ -36,7 +36,7 @@ dengy (master +) ml_notes $ git commit -m "add 2 files"
 dengy (master) ml_notes $ git remote add origin git@github.com:eyedeng/ml_notes.git  
 dengy (master) ml_notes $ git push -u origin master
 ```
-此后，每次本地提交后，只要有必要，就可以使用命令`git push origin master`推送最新修改。
+此后，每次本地提交后，只要有必要，就可以使用命令`git push origin master`推送最新修改。若只有唯一远程分支，可省略为`git push`
 
 # 从远程库克隆到本地
 `git clone 仓库的地址`  
@@ -44,10 +44,12 @@ Git支持多种协议，包括https，但通过ssh支持的原生git协议速度
 
 # 从远程库同步到本地
 ```bash
-dengy (master) ml_notes $ git remote -v
+dengy (master) ml_notes $ git remote -v  # 查看
 origin  git@github.com:eyedeng/ml_notes.git (fetch)
 origin  git@github.com:eyedeng/ml_notes.git (push)
 dengy (master) ml_notes $ git fetch origin master
 dengy (master) ml_notes $ git merge origin/master
 ```
-
+后两行可用`git pull origin master`代替。同理可省略为`git pull`。  
+$ git pull <远程主机名> <远程分支名>:<本地分支名>  
+$ git push <远程主机名> <本地分支名>:<远程分支名>
