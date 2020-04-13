@@ -54,5 +54,16 @@ dengy (master) ml_notes $ git merge origin/master
 $ git pull <远程主机名> <远程分支名>:<本地分支名>  
 $ git push <远程主机名> <本地分支名>:<远程分支名>
 
+# 合并冲突
+在网站上修改了文件，同时也在本地修改过，不能push, git pull后，还需手动merge conflicts。  
+```
+<<<<<<< HEAD
 # 本地修改
 la la la.
+=======
+# 合并冲突
+在网站上修改了文件，同时也在本地修改过，git pull前，需merge conflicts。
+line line.
+>>>>>>> a353517291f97f8ee5513b6eca70d808ce9d86ad
+```
+
