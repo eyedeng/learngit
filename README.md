@@ -52,9 +52,9 @@ dengy (master) ml_notes $ git merge origin/master
 ```
 <img src="imgs/remote.png" height="100px"> 
 
-<img src="imgs/merge.png" height="40px"> 
-
 <img src="imgs/fetch.png" height="40px"> 
+
+<img src="imgs/merge.png" height="40px"> 
 
 后两行可用`git pull origin master`代替。同理可省略为`git pull`。  
 $ git pull <远程主机名> <远程分支名>:<本地分支名>  
@@ -86,3 +86,6 @@ dengy (master) learngit $ git checkout feature  # 检出
 dengy (feature) learngit $
 ```
 在**feature**分支上的修改不会改变**master**(git log可知)。采用此分支，合并到**master**：(master) learngit $ `git merge feature`
+
+# Fork & Pull Request
+`fork`别人的仓库后，clone到本地，切换分支(也可在master)可以随意修改、提交，想别人拉取你的贡献代码，需发请求：`pull request`,经对方审查同意会`merge`到对方仓库。
