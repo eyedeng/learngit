@@ -50,6 +50,11 @@ origin  git@github.com:eyedeng/ml_notes.git (push)
 dengy (master) ml_notes $ git fetch origin master
 dengy (master) ml_notes $ git merge origin/master
 ```
+<img src="imgs/remote.png" height="150px"> 
+
+![remote](imgs/fetch.png)
+![remote](imgs/merge.png)
+
 后两行可用`git pull origin master`代替。同理可省略为`git pull`。  
 $ git pull <远程主机名> <远程分支名>:<本地分支名>  
 $ git push <远程主机名> <本地分支名>:<远程分支名>
