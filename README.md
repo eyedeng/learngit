@@ -67,3 +67,15 @@ line line.
 >>>>>>> a353517291f97f8ee5513b6eca70d808ce9d86ad
 ```
 
+# 检出分支
+当多人编写、开发新特性时可创建新分支。
+```sh
+dengy (master) learngit $ git branch
+* master
+dengy (master) learngit $ git branch feature  # 建新分支
+dengy (master) learngit $ git branch
+  feature
+* master
+dengy (master) learngit $ git checkout feature  # 检出
+dengy (feature) learngit $
+```
