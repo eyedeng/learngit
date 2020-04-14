@@ -79,3 +79,4 @@ dengy (master) learngit $ git branch
 dengy (master) learngit $ git checkout feature  # 检出
 dengy (feature) learngit $
 ```
+在**feature**分支上的修改不会改变**master**(git log可知)。采用此分支，合并到**master**：(master) learngit $ `git merge feature`
