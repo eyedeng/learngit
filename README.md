@@ -89,3 +89,10 @@ dengy (feature) learngit $
 
 # Fork & Pull Request
 `fork`别人的仓库后，clone到本地，切换分支(也可在master)可以随意修改、提交，想别人拉取你的贡献代码，需发请求：`pull request`,经对方审查同意会`merge`到对方仓库。
+
+# 配置
+同一台电脑同时使用gitHub（个人）和gitLab（公司），创建.ssh/config，设置github和gitlab账号配置。公司账号在用户级别（--global），在github仓库项目目录下设置name、email（即--local，仓库级别）
+```sh
+git config user.name 'eyedeng'
+git config user.email 'dengyan1912@outlook.com'
+```
